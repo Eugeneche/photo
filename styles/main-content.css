@@ -1,0 +1,156 @@
+section {
+    margin-bottom: 100px;
+}
+
+h1 {
+    margin: 50px auto;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.about {
+    display: flex;
+    align-items: start;
+}
+
+.about__my-text {
+    line-height: 1.5;
+}
+
+.about__my-photo {
+    width: 250px;
+    float: right;
+}
+
+.about__my-text, .about__my-photo {
+    margin: 0 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.gallery__item {
+    display: grid;
+    min-width: 300px;
+    max-height: 350px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+
+.gallery__item img {
+    align-self: end;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.gallery__item>img:hover {
+    transition: all ease .3s;
+    opacity: 0.7;
+}
+
+.youtube-frame {
+    max-width: 800px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1100px) {
+    .about {
+        margin: 0 4vw;
+    }
+
+    .about__my-text {
+        font-size: 15px;
+    }
+    
+    .about__my-photo {
+        width: 23%;
+        min-width: 130px;
+    }
+
+    .about__my-text, .about__my-photo {
+        margin: 0 3vw;
+    }
+    
+    .gallery {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .youtube-frame {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .youtube-frame iframe {
+        height: 45vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about__my-photo {
+        order: -1;
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery {
+        margin: 0 8vw;
+    }
+
+    .gallery__item {
+        min-height: 350px;
+        max-height: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .header img {
+        height: 45px;
+    }
+
+    .about__my-photo {
+        min-width: 100px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin: 0 10vw;
+    }
+
+    .gallery__item {
+        min-height: 300px;
+        max-height: 300px;
+        min-width: 250px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about__my-photo {
+        min-width: 80px;
+    }
+
+    .gallery {
+        margin: 0 6vw;
+    }
+}
