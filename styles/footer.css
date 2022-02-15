@@ -16,6 +16,7 @@
 .footer-menu__nav>ul {
     display: flex;
     padding-left: 0;
+    cursor: pointer;
 }
 
 .footer-menu__pages {
@@ -24,6 +25,12 @@
 
 .footer-menu__pages li {
     margin-right: 20px;
+}
+
+.footer-menu__nav .main-menu__item--active {
+    font-weight: 500;
+    color: #bbbbbb;
+    cursor: default;
 }
 
 .footer-menu__nav .socials li {
