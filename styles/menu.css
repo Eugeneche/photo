@@ -214,7 +214,8 @@ li {
     }
 
     .menu__box {
-        left: -110%;
+        /* left: -110%; */
+        right: -100%;
     }
 
     .menu__btn>span {
